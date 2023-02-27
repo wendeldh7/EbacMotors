@@ -4,3 +4,10 @@
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
+
+header {
+    background-color: #192a56;
+    padding: 16px 0;
+    color: #fff;
+}
+
