@@ -66,4 +66,22 @@ nav li a {
 
 #sobre-a-loja img {
     max-width: 400px;
+    margin-right: 24px;
+}
+
+section {
+    padding: 48px 0;
+}
+
+section h2 {
+    margin-bottom: 16px;
+}
+
+.lista-veiculos li {
+    list-style: none;
+    max-width: 30%;
+}
+
+.lista-veiculos li h3 {
+    margin: 16px 0;
 }
