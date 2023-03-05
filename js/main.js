@@ -50,6 +50,6 @@ $(document).ready(function() {
 
         $('html').animate({
             scrollTop: destino.offset().top
-        }, 1000)
+        }, 1000);
     })
 })
