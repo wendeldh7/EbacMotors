@@ -14,7 +14,7 @@
 </head>
 <body>
     <header>
-        <div class="container">
+        <div class="container container-flex">
             <h1>EBAC Motors</h1>
             <div class="menu-hamburguer">
                 <span></span>
@@ -46,6 +46,21 @@
         <img src="./img/slide2.png" alt="carro da bmw">
         <img src="./img/slide3.png" alt="carro da ford">
     </div>
+    <section>
+        <div class="container container-flex">
+            <img src="./img/loja.jpg" alt="Imagem da Loja EBAC Motors">
+            <div>
+                <h2>Sobre a EBAC Motors</h2>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio accusantium eius aliquam dolores quis nemo dolorum, explicabo quaerat quas adipisci provident. Nam dolorem facilis sint voluptatibus error doloribus, nisi pariatur.
+                </p>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio accusantium eius aliquam dolores quis nemo dolorum, explicabo quaerat quas adipisci provident. Nam dolorem facilis sint voluptatibus error doloribus, nisi pariatur.
+                </p>
+            </div>
+        </div>
+    </section>
+
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
@@ -54,6 +69,10 @@
         $('#carousel-imagens').slick({
             autoplay: true,
         });
+
+        $('.menu-hamburguer').click(function() {
+            $('nav').slideToggle();
+        })
     })
 </script>
 </body> 
