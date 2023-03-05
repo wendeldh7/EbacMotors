@@ -15,7 +15,8 @@ html {
     margin: 0 auto;
 }
 
-header {
+header,
+footer {
     background-color: #192a56;
     padding-top: 16px;
     color: #fff;
@@ -99,7 +100,7 @@ section h2 {
     margin: 0 5%;
 }
 
-.lista-veiculos li button {
+button {
     display: block;
     width: 100%;
     padding: 8px 0;
@@ -142,4 +143,21 @@ section h2 {
 .form-campo textarea {
     resize: none;
     height: 120px;
+}
+
+form {
+    max-width: 360px;
+}
+
+form button {
+    max-width: 120px;
+}
+
+footer li {
+    list-style: none;
+    margin-left: 16px;
+}
+
+footer li img {
+    height: 32px;
 }
