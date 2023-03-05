@@ -210,7 +210,7 @@
                 </div>
                 <div class="form-campo">
                     <label for="veiculo-interesse">Veiculo de interesse:</label>
-                    <input type="text" id="veiculo-interesse" name="veiculo-interesse">
+                    <input type="text" id="veiculo-interesse" name="veiculoDeInteresse">
                 </div>
                 <div class="form-campo">
                     <label for="mensagem">Mensagem:</label>
@@ -275,10 +275,25 @@
                 },
                 telefone: {
                     required: true
+                },
+                messages: {
+                    required: true,
+                },
+                veiculoDeInteresse: {
+                    required: false,
                 }
             },
-            messeges: {
-                nome: 'Por favor, insira o seu nome'
+            messages: {
+                nome: 'Por favor, insira o seu nome!'
+            },
+            submitHandler: function(form) {
+                console.log(form)
+            },
+            invalidHandler: function(evento, validador) {
+                let camposIncorretos = validador.numberOfInvalids();
+                if (camposIncorretos) {
+                    alert(`Existem ${camposIncorretos} campos incorretos`)
+                }
             }
         })
     })
