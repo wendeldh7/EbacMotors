@@ -41,4 +41,12 @@ $(document).ready(function() {
             }
         }
     })
+
+    $('.lista-veiculos button').click(function() {
+        const destino = $('#contato');
+
+        $('html').animate({
+            scrollTop: destino.offset().top
+        }, 1000)
+    })
 })
